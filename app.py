@@ -10,7 +10,7 @@ async def write_authorization_url(client,
                                   redirect_uri):
     authorization_url = await client.get_authorization_url(
         redirect_uri,
-        scope=["email"],
+        scope=["profile", "email"],
         extras_params={"access_type": "offline"},
     )
     return authorization_url
@@ -23,8 +23,14 @@ async def write_access_token(client,
     return token
 
 
-def main():
-    st.write("You're logged in")
+async def get_email(client,
+                    token):
+    user_id, user_email = await client.get_id_email(token)
+    return user_id, user_email
+
+
+def main(user_id, user_email):
+    st.write(f"You're logged in as {user_email}")
 
 
 if __name__ == '__main__':
@@ -71,6 +77,14 @@ if __name__ == '__main__':
                         ''')
                 else:
                     session_state.token = token
-                    main()
+                    user_id, user_email = asyncio.run(
+                        get_email(client=client,
+                                  token=token['access_token'])
+                    )
+                    session_state.user_id = user_id
+                    session_state.user_email = user_email
+                    main(user_id=session_state.user_id,
+                         user_email=session_state.user_email)
     else:
-        main()
+        main(user_id=session_state.user_id,
+             user_email=session_state.user_email)

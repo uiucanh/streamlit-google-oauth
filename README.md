@@ -10,7 +10,20 @@ pip install pip install git+https://github.com/hunkim/streamlit-google-oauth
 <img width="503" alt="image" src="https://user-images.githubusercontent.com/901975/170381434-b01c6e94-64be-4cef-b25a-a28651c43cd6.png">
 
 ## Put client id, etc. in env
+Put in the .env file
+```bash
+~/streamlit-google-oauth$ cat .env 
+GOOGLE_CLIENT_ID=767025784452-fscnojvddiek...
+GOOGLE_CLIENT_SECRET=GOCSPX-KE4_...
+GOOGLE_REDIRECT_URI=http://localhost:8080
+```
 
+or 
+```bash
+export GOOGLE_CLIENT_ID="xxx"
+export GOOGLE_CLIENT_SECRET="yyy"
+export GOOGLE_REDIRECT_URI="http://localhost:8501"
+```
 
 ## Add login in your streamlit app
 ```python

@@ -41,7 +41,7 @@ def login_button(authorization_url, button_text):
     )
 
 
-def logout_button(button_text="Logout"):
+def logout_button(button_text):
     if st.button(button_text):
         asyncio.run(
             revoke_token(
@@ -59,7 +59,7 @@ def login(
     client_id,
     client_secret,
     redirect_uri,
-    login_button_text="Login via Google",
+    login_button_text="Continue with Google",
     logout_button_text="Logout",
 ):
     st.session_state.client = GoogleOAuth2(client_id, client_secret)

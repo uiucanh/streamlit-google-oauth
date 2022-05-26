@@ -13,7 +13,7 @@ redirect_uri = os.environ["GOOGLE_REDIRECT_URI"]
 if __name__ == "__main__":
     login_info = oauth.login(
         client_id=client_id, client_secret=client_secret, redirect_uri=redirect_uri,
-        login_button_text="Login with Google", logout_button_text="Logout",
+        login_button_text="Continue with Google", logout_button_text="Logout",
     )
     if login_info:
         user_id, user_email = login_info

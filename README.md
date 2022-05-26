@@ -1,5 +1,5 @@
 # streamlit-google-oauth
-An example Streamlit application that incorporates Google OAuth 2.0
+An example [Streamlit](https://streamlit.io/) application that incorporates Google OAuth 2.0
 
 ## PIP
 ```bash
@@ -56,7 +56,6 @@ if __name__ == "__main__":
         st.write(f"Welcome {user_email}")
     else:
         st.write("Please login")
-# streamlit run app.py --server.port 8080
 ```
 
 ## Run streamlit with google oauth
@@ -64,7 +63,7 @@ if __name__ == "__main__":
 streamlit run app.py --server.port 8080
 ```
 ## Quick demo screenshots
-<img width="1655" alt="image" src="https://user-images.githubusercontent.com/901975/170390886-004e7243-7cac-4ace-91fc-ede46ad40c5f.png">
+![Quick demo](https://user-images.githubusercontent.com/901975/170390886-004e7243-7cac-4ace-91fc-ede46ad40c5f.png)
 
 
 

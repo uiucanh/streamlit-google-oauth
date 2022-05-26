@@ -2,7 +2,9 @@
 An example Streamlit application that incorporates Google OAuth 2.0
 
 ## PIP
-pip install pip install git+https://github.com/hunkim/streamlit-google-oauth
+```bash
+pip install git+https://github.com/hunkim/streamlit-google-oauth
+```
 
 ## Setup Google OAuth client ID
 <img width="1434" alt="image" src="https://user-images.githubusercontent.com/901975/170391098-c3a79b40-283a-4f78-a318-c4603bb18bb9.png">

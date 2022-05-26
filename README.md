@@ -6,7 +6,9 @@ pip install pip install git+https://github.com/hunkim/streamlit-google-oauth
 
 ## Setup Google OAuth client ID
 <img width="649" alt="image" src="https://user-images.githubusercontent.com/901975/170381382-1e73d20b-37ea-4c39-a3c1-8934b5b402e0.png">
+
 <img width="857" alt="image" src="https://user-images.githubusercontent.com/901975/170381419-5d5daba4-656f-4591-a5a5-fa4b0a68d38c.png">
+
 <img width="503" alt="image" src="https://user-images.githubusercontent.com/901975/170381434-b01c6e94-64be-4cef-b25a-a28651c43cd6.png">
 
 ### Make sure people api is enabled
@@ -59,3 +61,12 @@ if __name__ == "__main__":
 ```bash
 streamlit run app.py --server.port 8080
 ```
+## Quick demo screenshots
+<img width="866" alt="image" src="https://user-images.githubusercontent.com/901975/170389044-28578c50-6548-41f2-8cdf-630379b62d1d.png">
+
+<img width="867" alt="image" src="https://user-images.githubusercontent.com/901975/170389075-e7db6e86-fc9e-449e-ba36-fb356dddcf14.png">
+
+<img width="865" alt="image" src="https://user-images.githubusercontent.com/901975/170389100-6d08d9e7-20b0-44d3-8cf1-886872cdc066.png">
+
+
+

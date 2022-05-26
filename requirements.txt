@@ -1,4 +1,6 @@
+git+https://github.com/hunkim/streamlit-google-oauth
+protobuf<=3.20.x 
 streamlit
 httpx-oauth
 python-dotenv
-typing-extensions
+typing_extensions

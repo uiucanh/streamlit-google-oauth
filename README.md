@@ -65,11 +65,7 @@ if __name__ == "__main__":
 streamlit run app.py --server.port 8080
 ```
 ## Quick demo screenshots
-<img width="866" alt="image" src="https://user-images.githubusercontent.com/901975/170389044-28578c50-6548-41f2-8cdf-630379b62d1d.png">
-
-<img width="867" alt="image" src="https://user-images.githubusercontent.com/901975/170389075-e7db6e86-fc9e-449e-ba36-fb356dddcf14.png">
-
-<img width="865" alt="image" src="https://user-images.githubusercontent.com/901975/170389100-6d08d9e7-20b0-44d3-8cf1-886872cdc066.png">
+<img width="1655" alt="image" src="https://user-images.githubusercontent.com/901975/170390886-004e7243-7cac-4ace-91fc-ede46ad40c5f.png">
 
 
 

@@ -27,7 +27,7 @@ or
 ```bash
 export GOOGLE_CLIENT_ID="xxx"
 export GOOGLE_CLIENT_SECRET="yyy"
-export GOOGLE_REDIRECT_URI="http://localhost:8501"
+export GOOGLE_REDIRECT_URI="http://localhost:8080"
 ```
 
 ## Add login in your streamlit app

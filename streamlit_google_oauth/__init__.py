@@ -3,7 +3,8 @@ import os
 import asyncio
 from httpx_oauth.clients.google import GoogleOAuth2
 
-__version__ = '0.1'
+__version__ = "0.1"
+
 
 async def write_authorization_url(client, redirect_uri):
     authorization_url = await client.get_authorization_url(

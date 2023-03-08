@@ -10,16 +10,23 @@ redirect_uri = os.environ["GOOGLE_REDIRECT_URI"]
 
 
 if __name__ == "__main__":
+    app_name = '''
+    Streamlit Google Authentication Demo
+    '''
+    app_desc = '''
+    A streamlit application that authenticates users by <strong>Google Oauth</strong>.
+    The user must have a google account to log in into the application.
+    '''
     login_info = oauth.login(
         client_id=client_id,
         client_secret=client_secret,
         redirect_uri=redirect_uri,
-        login_button_text="Continue with Google",
+        app_name=app_name,
+        app_desc=app_desc,
         logout_button_text="Logout",
     )
     if login_info:
         user_id, user_email = login_info
         st.write(f"Welcome {user_email}")
-    else:
-        st.write("Please login")
+
 # streamlit run app.py --server.port 8080

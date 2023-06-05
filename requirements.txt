@@ -1,5 +1,4 @@
-git+https://github.com/hunkim/streamlit-google-oauth
-protobuf<=3.20.x 
+protobuf<=3.20.3 
 streamlit
 httpx-oauth
 python-dotenv

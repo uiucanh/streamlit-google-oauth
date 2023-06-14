@@ -1,2 +1,5 @@
-streamlit==0.81.1
-httpx-oauth==0.3.5
+protobuf<=3.20.3 
+streamlit
+httpx-oauth
+python-dotenv
+typing_extensions
